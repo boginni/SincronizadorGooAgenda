@@ -1,0 +1,42 @@
+-- Adicionar campo para salvar o token
+
+ALTER TABLE CB_PROFISSIONAL
+ADD TOKEN_GOOGLE DM_STR3000;
+
+COMMENT ON COLUMN CB_PROFISSIONAL.TOKEN_GOOGLE IS
+'Autor: Brunno Marques
+Data: 20.10.2021
+
+Usado em: AG_AGENDAMENTO_CAB
+Motivo: Sincronizar agenda com google calendar';
+
+-- Adicionar campo para salvar o calendar ID
+
+ALTER TABLE CB_PROFISSIONAL
+ADD CALENDAR_ID DM_STR250;
+
+COMMENT ON COLUMN CB_PROFISSIONAL.CALENDAR_ID IS
+'Autor: Brunno Marques
+Data: 20.10.2021
+
+Motivo: Sincronizar agenda com google calendar';
+
+
+-----------
+
+ALTER TABLE CB_PROFISSIONAL
+ADD CALENDAR_PRINCIPAL DM_BOOLEAN;
+
+COMMENT ON COLUMN CB_PROFISSIONAL.CALENDAR_PRINCIPAL IS
+'Autor: Brunno Marques
+Data: 21.10.2021
+
+Motivo: Necessario para definir a conta principal para sincronizar eventos do google calendar
+OBS: Apenas uma linha deve conter um 'T' para servir como principal
+';
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+
+#edit input {
+    padding: 12px;
+    width: 80%;
+}
+
+#edit input.summary {
+    font-size: 16pt;
+}
+
+
+#edit td {
+    text-align: center;
+    padding: 10px;
+    /*border-collapse: collapse;*/
+    /*border: black solid 1px;*/
+}
+
+#edit textarea {
+    width: 400px;
+    height: 150px;
+    padding: 8px;
+}
+
+#ag_dba {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#ag_dba td, #ag_dba th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ag_dba tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#ag_dba tr:hover {
+    background-color: #ddd;
+}
+
+#ag_dba th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#ag_dba input {
+    width: 100%;
+    height: 100%;
+}
+
+#ag_dba input:hover {
+    cursor: pointer;
+    background: crimson;
+}
+

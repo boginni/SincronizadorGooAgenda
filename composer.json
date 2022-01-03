@@ -1,0 +1,9 @@
+{
+    "require": {
+        "google/apiclient": "2.10",
+        "ext-curl": "*",
+        "ext-json": "*",
+      "ext-interbase": "*",
+      "ext-iconv": "*"
+    }
+}
